@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manideep Car Driving School</title>
+    <meta property="og:description" content="Manideep Car Driving School is the best driving school in Vijayawada.Call now to book driving lessons with experienced driving instructor">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Analytics (Replace with your code) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000ttttttttt"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-157286872-1upgrade');
+
+          //conversions start
+        const callButton= document.querySelectorAll('.callButton');
+
+        callButton.forEach(el => el.addEventListener('click', event => {
+          gtag('event', 'click', {   'event_category': 'contact',  'event_label': 'Call'});
+          console.log('Button Clicked');
+        }));
+
+        const smsButton= document.querySelectorAll('.smsButton');
+
+        smsButton.forEach(el => el.addEventListener('click', event => {
+          gtag('event', 'click', {   'event_category': 'contact',  'event_label': 'Sms'});
+          console.log('Button Clicked');
+        }));
+
+        const whatsAppButton= document.querySelectorAll('.whatsAppButton');
+
+        whatsAppButton.forEach(el => el.addEventListener('click', event => {
+          gtag('event', 'click', {   'event_category': 'contact',  'event_label': 'WhatsApp'});
+          console.log('Button Clicked');
+        }));
+         //conversions end
+    </script>
+
+      <script async>
+            const API_URL = `https://www.cloudflare.com/cdn-cgi/trace`;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange =    function() {
+            if (this.readyState == 4 && this.status == 200) {
+      
+                const ipRegex = /[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/                         
+                const IP = xhttp.responseText.match(ipRegex)[0];
+                gtag('event', 'pageview', {   'event_category': 'ipaddress',  'event_label': IP, 'non_interaction': true});
+              
+              }
+            };       
+            xhttp.open("GET", API_URL, true);
+            xhttp.send();
+      </script>
+
+     <script>
+        //sessionStorage.clear();
+        var pageView = sessionStorage.getItem("pageView");
+        if(!pageView)
+        {
+         var pageView = 1;
+         sessionStorage.setItem("pageView", pageView);
+        }  
+        else
+        {
+          pageView++;
+          sessionStorage.setItem("pageView", pageView);
+          if(pageView == 5)
+          {
+          window.location = '?frequentuser=yes';
+          }
+          if(pageView == 10)
+          {
+          window.location = '?frequentuser=yes';
+          }
+          if(pageView == 15)
+          {
+          window.location = '?frequentuser=yes';
+          }
+        }
+         //sessionStorage.clear();
+        </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Mani deep Car Driving School",
+          "@id": "",
+          "url": "https://Manideep.com/",
+          "telephone": "9492295182",
+          "priceRange": "1500-3000",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Moghalrajpuram, madhu gardens",
+            "addressLocality": "Vijayawada",
+            "postalCode": "520010",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 16.508077756943116,
+            "longitude": 80.64287150792751
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "06:00",
+            "closes": "19:00"
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <p>Best Car Driving School in Vijayawada</p>
+                <div class="social-links">
+                    <a href="tel:+919492295182" class="phone callButton" aria-label="Call us"><i class="fa fa-phone"></i> 9492295182</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                    <h3><b>Manideep <span>Car Driving School </span></b></h3> 
+                <div class="navbar-menu" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-us">Address</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send/?phone=919492295182">WhatsApp</a></li>
+                        <li class="nav-item"><a class="nav-link smsButton" href="sms:+919492295182">SMS</a></li>
+                        <li class="nav-item"><a class="nav-link callButton" href="tel:+919492295182">CALL</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="slide"><img src="car7.jpg" alt="Slide 1" width="100%" height="400"></div>
+            </div>
+        </section>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">Learn driving from the experts</h2>
+                <p class="section-subtitle">Your journey to safe driving starts here</p>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <i class="fa fa-check"></i>
+                        <h3>Prices</h3>
+                        <p>20 Classes - ₹2500<br>Each class 5km distance practice<br>Home Pickup and drop </p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa fa-check"></i>
+                        <h3>Refresher Lessons Available</h3>
+                        <p>Sharpen your driving skills with customized refresher courses.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa fa-check"></i>
+                        <h3>Driving Licence Assistance</h3>
+                        <p>Get step-by-step help with licence applications and paperwork.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa fa-check"></i>
+                        <h3>Driving Test Assistance</h3>
+                        <p>Prepare for your driving test with practical tips and mock tests.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa fa-check"></i>
+                        <h3>Driving Perfection Coaching</h3>
+                        <p>Master advanced driving techniques for complete road confidence.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa fa-check"></i>
+                        <h3>Learn All The Things About Car Driving</h3>
+                        <p>From basics to pro-level driving, we cover it all!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Reviews</h2>
+                <p class="section-subtitle">What our students say about us</p>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <blockquote class="testimonial">
+                            <p>Professional instructors and a well-structured learning approach</p>
+                            <cite>Mohan Abhi</cite>
+                        </blockquote>
+                    </div>
+                    <div class="grid-item">
+                        <blockquote class="testimonial">
+                            <p>The best place to learn driving—friendly, professional, and efficient!</p>
+                            <cite>Vikram</cite>
+                        </blockquote>
+                    </div>
+                    <div class="grid-item">
+                        <blockquote class="testimonial">
+                            <p>Learned safe and responsible driving quickly. Great experience!</p>
+                            <cite>Phani</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container main-footer">
+            <div class="footer-grid">
+                <aside id="contact-us" class="widget contact-widget">
+                    <h3 class="widget-title">Contact Us</h3>
+                    <!-- <p><a href="mailto:example@example.com">example@example.com</a></p> -->
+                    <p>Phone: 919492295182</p>
+                    <p>Moghalrajpuram,<br>
+                        Madhu gardens,<br>
+                        Vijayawada</p>
+                    
+                </aside>
+
+                <aside class="widget cars-widget">
+                    <h3 class="widget-title">Cars Available</h3>
+                    <ul>
+                        <li>Santro</li>
+                        <li>Indica</li>
+                        <li>Matiz</li>
+                        <li>Swift</li>
+                        <li>Swift Dzire</li>
+                        <li>Indigo</li>
+                    </ul>
+                </aside>
+
+                <aside id="map" class="widget map-widget">
+                    <h3 class="widget-title">Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.366414266302!2d80.64055367460873!3d16.507589227554746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb6268ea4b65%3A0x5519dae676689470!2sMani%20deep%20Car%20Driving%20School!5e0!3m2!1sen!2sin!4v1741552087640!5m2!1sen!2sin" width="270" height="270" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+            </div>
+        </div>
+        <p class="keywords">
+
+            Near me car driving school
+            best car driving school in Vijayawada
+            cheapest car driving school in Vijayawada
+            learn on your own car practice
+            vijayawada car driving school
+            best school in vijayawada
+            Near by car driving school
+            lowest car driving classes
+            car driving classes
+            car driving classes in vijayawada
+            safe driving classes
+            car driving licence school
+            nearest car driving school
+            
+            </p>
+
+        <div class="post-footer">
+            <div class="container">
+                <p>© 2025 ManiDeep car Driving School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Menu (Mobile) -->
+    <div class="bottom-menu">
+        <a class="bottom-menu-item callButton" href="tel:+919492295182"><i class="fa fa-phone"></i> Call</a>
+        <a class="bottom-menu-item smsButton" href="sms:+919492295182"><i class="fa fa-sms"></i> SMS</a>
+        <a class="bottom-menu-item whatsAppButton" href="https://api.whatsapp.com/send/?phone=919492295182"tail><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+    <a href="#" id="toTop"><i class="fa fa-angle-up"></i></a>
+
+    <script>
+        // Basic scroll-to-top functionality
+        document.getElementById('toTop').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+      //toggle mobile menu
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarMenu = document.querySelector(".navbar-menu");
+
+        navbarToggler.addEventListener("click", () => {
+          navbarMenu.classList.toggle("active");
+        });
+
+    </script>
+    
+</body>
+</html>

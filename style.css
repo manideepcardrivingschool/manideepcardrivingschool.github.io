@@ -1,0 +1,367 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root {
+    --primary-color: #D76C82;
+    --secondary-color: #B03052;
+    --light-color: #EBE8DB;
+    --text-color: #3D0301;
+    --link-color: #D76C82;
+    --link-hover-color: #B03052;
+    --container-width: 1200px;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* General Styles */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 5px 8px gray;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure it stays on top */
+}
+
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--light-color); /* Changed text color for contrast */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .container p
+{
+    font-size: 12px;
+}
+
+.top-bar .social-links a {
+    color: var(--light-color); /* Changed link color for contrast */
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container h3
+{
+    color: #72112c;
+}
+
+.navbar .container span
+{
+    color: #343a40;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Adjust as needed */
+}
+
+/* Navigation Menu */
+.navbar-nav {
+    display: none; /* Hidden on smaller screens */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Vertically align items */
+}
+
+.navbar-nav.active{
+    display:flex;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--light-color);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar-toggler{
+    display: block;
+    cursor: pointer;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    /* Add hero background image or color */
+    
+    text-align: center;
+    background-color: #e9ecef; /* Light gray background */
+}
+
+.hero .hero-slide p {
+    /* Add slider styles */
+    background-image: "Manideep.png";
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0.2, 0.4);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item i {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.grid-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--light-color);
+}
+
+.testimonial {
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding-top: 40px;
+}
+
+.main-footer {
+    padding-bottom: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widget-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--light-color); /* Changed text color for contrast */
+}
+
+.contact-widget p {
+    margin-bottom: 10px;
+}
+
+.locations-widget ul, .cars-widget ul {
+    list-style: none;
+    padding: 2;
+}
+
+.locations-widget li, .cars-widget li {
+    margin-bottom: 8px;
+}
+
+.post-footer {
+    background-color: var(--text-color); /* Or another dark color */
+    color: rgb(248, 242, 242);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+/* Bottom Menu (Mobile) */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--text-color);
+    color: var(--light-color); /* Changed text color for contrast */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.bottom-menu-item {
+    color: var(--light-color); /* Changed text color for contrast */
+    text-align: center;
+    flex: 1;
+    padding: 8px;
+}
+
+/* Scroll-to-Top Button */
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color); /* Changed text color for contrast */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    display: none; /* Hidden by default */
+    z-index: 100;
+}
+
+/* Show the button when scrolling down */
+body.scrolled #toTop {
+    display: block;
+}
+
+.keywords 
+{
+    color: #343a40; 
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex; /* Show on larger screens */
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+
+    .bottom-menu {
+        display: none; /* Hide on larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust column size */
+    }
+}
