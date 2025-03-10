@@ -119,6 +119,12 @@ header {
     font-size: 40px;
 }
 
+/* .navbar .container span
+{
+    color: #343a40;
+    text-shadow: 2px 2px 4px gray;
+} */
+
 .navbar-brand img {
     max-height: 50px; /* Adjust as needed */
 }
