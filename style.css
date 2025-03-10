@@ -88,7 +88,8 @@ header {
 
 .top-bar .container p
 {
-    font-size: 12px;
+    font-size: 10px;
+    padding-left: -25px;
 }
 
 .top-bar .social-links a {
@@ -107,15 +108,15 @@ header {
     align-items: center;
 }
 
-.navbar .container h3
+.navbar .container h1
 {
     color: #72112c;
+    font-size: 25px;
 }
 
-.navbar .container span
+.navbar .container h1 span
 {
-    color: #343a40;
-    text-shadow: 2px 2px 4px gray;
+    font-size: 40px;
 }
 
 .navbar-brand img {
